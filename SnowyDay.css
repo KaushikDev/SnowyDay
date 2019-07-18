@@ -1,0 +1,85 @@
+.back{
+position: fixed;
+width: 100%;
+height: 100%;
+top:0;
+left:0;
+padding: 0;
+margin:0;
+background-color: #00aaaa 
+
+}
+
+.snow{
+    position: absolute;
+    background-color: #eee;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 25px 11px whitesmoke;
+    animation-name: snowing;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0.65;
+   }
+
+
+.snow-flake1{
+    top: 10%;
+    left: 5%;
+    animation-duration: 17.5s;
+ }
+ .snow-flake2{
+    top: 0;
+    left: 25%;
+    animation-duration: 14.5s;
+ }
+ .snow-flake3{
+    top: 15%;
+    left: 45%;
+    animation-duration: 15.5s;
+ }
+ .snow-flake4{
+    top: 0;
+    left: 65%;
+    animation-duration: 14s;
+ }
+ .snow-flake5{
+    top: 20%;
+    left: 85%;
+    animation-duration: 15s;
+ }
+ .snow-flake6{
+    top: 0;
+    left: 15%;
+    animation-duration: 17s;
+ }
+
+ .snow-flake7{
+    top: 30%;
+    left: 35%;
+    animation-duration: 18s;
+ }
+ .snow-flake8{
+    top: 0;
+    left: 55%;
+    animation-duration: 19s;
+ }
+ .snow-flake9{
+    top: 25%;
+    left: 75%;
+    animation-duration: 17.5s;
+ }
+ .snow-flake10{
+    top: 0;
+    left: 95%;
+    animation-duration: 7s;
+ }
+
+
+@keyframes snowing{
+ 
+    100%{
+        top: 90%;
+    }
+}
