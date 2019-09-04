@@ -124,7 +124,7 @@
 .snow-piles {
   position: absolute;
   bottom: 0;
-  background: white;
+  background: #eee;
   border-radius: 100% 100% 0 0;
   z-index: 1;
 }
