@@ -1,85 +1,274 @@
-.back{
-position: fixed;
-width: 100%;
-height: 100%;
-top:0;
-left:0;
-padding: 0;
-margin:0;
-background-color: #00aaaa 
-
+.back {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #00aaaa;
+  opacity: 0.5;
 }
 
-.snow{
-    position: absolute;
-    background-color: #eee;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    box-shadow: 1px 1px 25px 11px whitesmoke;
-    animation-name: snowing;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    opacity: 0.65;
+.snow {
+  position: absolute;
+  background-color: #eee;
+  top: 0;
+  border-radius: 50%;
+  animation-name: snowing;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 0.3;
+}
+
+.snow-flake1 {
+  width: 12px;
+  height: 12px;
+  left: 5%;
+  animation-duration: 1.5s;
+}
+.snow-flake2 {
+  width: 6px;
+  height: 6px;
+  left: 15%;
+  animation-duration: 2.75s;
+}
+.snow-flake3 {
+  width: 8px;
+  height: 8px;
+  left: 25%;
+  animation-duration: 4.5s;
+}
+.snow-flake4 {
+  width: 12px;
+  height: 12px;
+  left: 30%;
+  animation-duration: 5s;
+}
+.snow-flake5 {
+  width: 11px;
+  height: 11px;
+  left: 35%;
+  animation-duration: 2.2s;
+}
+.snow-flake6 {
+  width: 8px;
+  height: 8px;
+  left: 45%;
+  animation-duration: 1.85s;
+}
+
+.snow-flake7 {
+  width: 5px;
+  height: 5px;
+  left: 55%;
+  animation-duration: 3.5s;
+}
+.snow-flake8 {
+  width: 7px;
+  height: 7px;
+  left: 60%;
+  animation-duration: 3.75s;
+}
+.snow-flake9 {
+  width: 9px;
+  height: 9px;
+  left: 65%;
+  animation-duration: 4.5s;
+}
+.snow-flake10 {
+  width: 11px;
+  height: 11px;
+  left: 75%;
+  animation-duration: 1.75s;
+}
+
+.snow-flake11 {
+  width: 12px;
+  height: 12px;
+  left: 80%;
+  animation-duration: 2.75s;
+}
+.snow-flake12 {
+  width: 6px;
+  height: 6px;
+  left: 85%;
+  animation-duration: 3.75s;
+}
+.snow-flake13 {
+  width: 8px;
+  height: 8px;
+  left: 90%;
+  animation-duration: 4.5s;
+}
+.snow-flake14 {
+  width: 12px;
+  height: 12px;
+  left: 95%;
+  animation-duration: 1.65s;
+}
+.snow-flake15 {
+  width: 11px;
+  height: 11px;
+  left: 100%;
+  animation-duration: 2.5s;
+}
+
+@keyframes snowing {
+  100% {
+    top: 90%;
+    opacity: 0.4;
+  }
+}
+
+.snow-piles {
+  position: absolute;
+  bottom: 0;
+  background: white;
+  border-radius: 100% 100% 0 0;
+  z-index: 1;
+}
+
+.snow-pile1 {
+  width: 50%;
+  height: 75px;
+  left: 0;
+}
+.snow-pile2 {
+  width: 50%;
+  height: 100px;
+  left: 25%;
+}
+.snow-pile3 {
+  width: 50%;
+  height: 75px;
+  left: 50%;
+}
+
+.snowman,
+.head,
+.eyes,
+.nose,
+.body,
+.hands,
+.buttons {
+  position: absolute;
+}
+
+.snowman {
+  bottom: 50px;
+  left: 50%;
+  background: transparent;
+  width: 200px;
+  height: 250px;
+}
+
+.head {
+  z-index: 1;
+  left: 35%;
+  height: 75px;
+  width: 75px;
+  border-radius: 55% 65% 60% 70%;
+  background: white;
+}
+
+.eyes {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  top: 25%;
+  background: black;
+  animation-name: wink;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+}
+
+.left-eye {
+  left: 20%;
+}
+
+.right-eye {
+  left: 60%;
+  
+}
+
+.nose {
+  width: 50px;
+  height: 10px;
+  background: orange;
+  top: 65%;
+  left: -10%;
+  border-radius: 100% 0 0 100%;
+  transform: rotate(-30deg);
+}
+
+.body {
+  bottom: 0;
+  height: 200px;
+  width: 200px;
+  border-radius: 75% 50% 75% 75%;
+  background: white;
+}
+
+.hands {
+  height: 10px;
+  width: 100px;
+  top: 25%;
+  background: #555;
+z-index: -1;
+}
+
+.left-hand {
+  border-radius: 100% 0 0 100%;
+  left: -50px;
+  transform: rotate(45deg);
+  animation-name: wave;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+}
+
+.right-hand {
+  border-radius: 0 100% 100% 0;
+  left: 80%;
+  transform: rotate(-40deg);
+}
+
+.buttons {
+  height: 10px;
+  width: 10px;
+  background: #f00;
+  border-radius: 50%;
+}
+
+.top-button {
+  top: 25%;
+  left: 40%;
+}
+
+.middle-button {
+  top: 50%;
+  left: 35%;
+}
+
+.bottom-button {
+  top: 75%;
+  left: 40%;
+}
+
+
+@keyframes wink{
+  50%{
+transform: scale(1.5);
    }
+}
 
-
-.snow-flake1{
-    top: 10%;
-    left: 5%;
-    animation-duration: 17.5s;
- }
- .snow-flake2{
-    top: 0;
-    left: 25%;
-    animation-duration: 14.5s;
- }
- .snow-flake3{
-    top: 15%;
-    left: 45%;
-    animation-duration: 15.5s;
- }
- .snow-flake4{
-    top: 0;
-    left: 65%;
-    animation-duration: 14s;
- }
- .snow-flake5{
-    top: 20%;
-    left: 85%;
-    animation-duration: 15s;
- }
- .snow-flake6{
-    top: 0;
-    left: 15%;
-    animation-duration: 17s;
- }
-
- .snow-flake7{
-    top: 30%;
-    left: 35%;
-    animation-duration: 18s;
- }
- .snow-flake8{
-    top: 0;
-    left: 55%;
-    animation-duration: 19s;
- }
- .snow-flake9{
-    top: 25%;
-    left: 75%;
-    animation-duration: 17.5s;
- }
- .snow-flake10{
-    top: 0;
-    left: 95%;
-    animation-duration: 7s;
- }
-
-
-@keyframes snowing{
- 
-    100%{
-        top: 90%;
-    }
+@keyframes wave{
+   50%{
+   transform: skewY(10deg);
+   }
+   75%{
+      transform: skewY(20deg);
+   }
 }
